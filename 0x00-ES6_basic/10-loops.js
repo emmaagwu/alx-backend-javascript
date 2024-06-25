@@ -1,3 +1,9 @@
 export default function appendToEachArrayValue(array, appendString) {
-  return array.map(value => appendString + value);
+  const wordsArray = [];
+
+  for (const word of array) {
+    wordsArray.push(`${appendString}${word}`);
+  }
+
+  return wordsArray;
 }
