@@ -14,7 +14,7 @@ class HolbertonCourse {
       this._length = length;
     }
 
-    if (!Array.isArray(students) || !students.every(student => typeof student === 'string')) {
+    if (!Array.isArray(students) || !students.every((student) => typeof student === 'string')) {
       errors.push('Students must be an array of strings');
     } else {
       this._students = students;
@@ -54,8 +54,7 @@ class HolbertonCourse {
   }
 
   set students(students) {
-    if (Array.isArray(students) &&
-      students.every(student => typeof student === 'string')) {
+    if (Array.isArray(students) && students.every((student) => typeof student === 'string')) {
       this._students = students;
     } else {
       throw new TypeError('Students must be an array');
