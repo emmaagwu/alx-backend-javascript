@@ -1,4 +1,4 @@
-class HolbertonCourse {
+export default class HolbertonCourse {
   constructor(name, length, students) {
     const errors = [];
 
@@ -61,5 +61,3 @@ class HolbertonCourse {
     }
   }
 }
-
-export default HolbertonCourse;
