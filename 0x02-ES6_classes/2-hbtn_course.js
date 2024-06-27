@@ -26,7 +26,7 @@ export default class HolbertonCourse {
   }
 
   set length(length) {
-    if (typeof length === Number) {
+    if (typeof length === 'number' && Number.isFinite(length)) {
       this._length = length;
     } else {
       throw new TypeError('Length must be a number');
