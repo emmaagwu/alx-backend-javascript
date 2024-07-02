@@ -1,4 +1,9 @@
-export default function getListStudent() {
+/**
+ * Retrieves a list of students.
+ * @author Agwu Emmanuel <https://github.com/emmaagwu>
+ * @returns {Array} The list of students.
+ */
+export default function getListStudents() {
   return [
     { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
     { id: 2, firstName: 'James', location: 'Columbia' },
