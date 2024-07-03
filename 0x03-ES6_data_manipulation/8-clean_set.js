@@ -1,6 +1,6 @@
 /**
- * Removes the startString from each string element in the set and returns the cleaned set as a hyphen-separated string.
- * 
+ * Removes the startString from each string element in the set and returns the
+ *  cleaned set as a hyphen-separated string.
  * @param {Set} set - The set to clean.
  * @param {string} startString - The string to remove from the beginning of each element in the set.
  * @returns {string} - The cleaned set as a hyphen-separated string.
