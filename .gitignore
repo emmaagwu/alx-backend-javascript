@@ -36,7 +36,6 @@ coverage/
 # Ignore all Javascript files with main.js
 *.d.ts
 *main.js
-.eslintrc.js
 babel.config.js
 
 # Optional: Lock files
