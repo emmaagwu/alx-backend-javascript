@@ -10,7 +10,7 @@ const countStudents = (dataPath) => new Promise((resolve, reject) => {
       reject(new Error('Cannot load the database'));
       return;
     }
-    
+
     if (fileData) {
       const lines = fileData.trim().split('\n');
       const studentDataGroups = {};
@@ -28,7 +28,7 @@ const countStudents = (dataPath) => new Promise((resolve, reject) => {
 
         const studentObject = studentAttributes
           .map((attribute, index) => [attribute, attributeValues[index]]);
-        
+
         studentDataGroups[majorField].push(Object.fromEntries(studentObject));
       }
 
