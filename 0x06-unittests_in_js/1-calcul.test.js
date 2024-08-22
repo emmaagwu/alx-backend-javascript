@@ -126,3 +126,4 @@ describe('calculateNumber', () => {
       assert.strictEqual(calculateNumber('DIVIDE', 1000.0, 0.001), 'Error');
   });
 });
+});
