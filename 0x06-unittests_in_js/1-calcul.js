@@ -1,5 +1,4 @@
 const calculateNumber = (type, a, b) => {
-  if (typeof(a) === 'number' && typeof(b) === 'number') {
     if (type === 'SUM') {
       return Math.round(a) + Math.round(b);
     }
@@ -10,7 +9,6 @@ const calculateNumber = (type, a, b) => {
       return Math.round(b) === 0 ? 'Error' : Math.round(a) / Math.round(b);
     }
     return 0;
-  };
-}
+};
 
 module.exports = calculateNumber;
