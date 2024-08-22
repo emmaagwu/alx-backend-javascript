@@ -4,7 +4,7 @@ const calculateNumber = require('./1-calcul');
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {
     it('summing equal positive numbers', () => {
-      assert.strictEqual(calculateNumber('SUM', 1.7, 1.3), 3);
+      assert.strictEqual(calculateNumber('SUM', 1.7, 1.7), 4);
     });
 
     it('adding different positive numbers', () => {
@@ -12,7 +12,7 @@ describe('calculateNumber', () => {
     });
 
     it('summing up positive and negative numbers', () => {
-      assert.strictEqual(calculateNumber('SUM', 6.5, -2.5), 4);
+      assert.strictEqual(calculateNumber('SUM', 6.5, -2.5), 5);
     });
 
     it('adding two negative numbers', () => {
@@ -37,7 +37,7 @@ describe('calculateNumber', () => {
 
     // Additional test cases
     it('summing a large positive number with a small negative number', () => {
-      assert.strictEqual(calculateNumber('SUM', 1000.3, -0.8), 1000);
+      assert.strictEqual(calculateNumber('SUM', 1000.3, -0.8), 999);
     });
 
     it('sum of fractional positive and negative numbers', () => {
@@ -80,7 +80,7 @@ describe('calculateNumber', () => {
     });
 
     it('difference between large positive and small negative number', () => {
-      assert.strictEqual(calculateNumber('SUBTRACT', 1000.4, -0.4), 1001);
+      assert.strictEqual(calculateNumber('SUBTRACT', 1000.4, -0.4), 1000);
     });
   });
 
@@ -123,7 +123,6 @@ describe('calculateNumber', () => {
     });
 
     it('division resulting in large quotient', () => {
-      assert.strictEqual(calculateNumber('DIVIDE', 1000.0, 0.001), 1000000);
-    });
+      assert.strictEqual(calculateNumber('DIVIDE', 1000.0, 0.001), 'Error');
   });
 });
